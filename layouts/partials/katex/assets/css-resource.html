@@ -1,0 +1,6 @@
+{{- partialCached "katex/assets/fonts" . }}
+{{- $css := slice 
+  (resources.Get "mods/katex/katex.min.css")
+}}
+{{- $css = $css | resources.Concat "css/katex.css" }}
+{{- return $css -}}

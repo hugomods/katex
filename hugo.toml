@@ -1,0 +1,8 @@
+[module]
+
+[module.hugoVersion]
+min = "0.110.0"
+
+[params.hugopress.modules.katex.hooks.head-end]
+
+[params.hugopress.modules.katex.hooks.body-end]

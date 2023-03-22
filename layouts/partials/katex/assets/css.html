@@ -1,0 +1,4 @@
+{{- if .Store.Get "hasKaTeX" }}
+  {{- $css := partialCached "katex/assets/css-resource" . }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" />
+{{- end }}
