@@ -3,6 +3,12 @@
 [module.hugoVersion]
 min = "0.110.0"
 
+[[module.imports]]
+path = "github.com/KaTex/KaTex"
+[[module.imports.mounts]]
+source = "fonts"
+target = "assets/mods/katex/fonts"
+
 [params.hugopress.modules.katex.hooks.head-end]
 
 [params.hugopress.modules.katex.hooks.body-end]
