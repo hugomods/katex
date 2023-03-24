@@ -13,8 +13,6 @@ module.exports = {
       patterns: [
         // css
         { from: path.join(PATHS.source, 'katex.min.css'), to: path.join(PATHS.target, 'katex.min.css') },
-        // fonts
-        { from: path.join(PATHS.source, 'fonts'), to: path.join(PATHS.target, 'fonts') },
         // js
         { from: path.join(PATHS.source, 'katex.min.js'), to: path.join(PATHS.target, 'katex.min.js') },
         { from: path.join(PATHS.source, 'contrib/auto-render.min.js'), to: path.join(PATHS.target, 'contrib/auto-render.min.js') },
