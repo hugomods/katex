@@ -1,4 +1,4 @@
 {{- if .Store.Get "hasKaTeX" }}
   {{- $js := partialCached "katex/assets/js-resource" . }}
-  <script src="{{ $js.RelPermalink }}" defer></script>
+  <script src="{{ $js.RelPermalink }}" defer onload="renderMathInElement(document.body)"></script>
 {{- end }}
