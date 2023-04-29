@@ -12,7 +12,7 @@
   "homepage": "https://github.com/hugomods/katex",
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",
-    "katex": "^0.16.6",
+    "katex": "^0.16.7",
     "prettier": "^2.7.1",
     "prettier-plugin-go-template": "^0.0.13",
     "webpack-cli": "^5.0.1"
