@@ -4,7 +4,7 @@
 min = "0.110.0"
 
 [[module.imports]]
-path = "github.com/KaTex/KaTex"
+path = "github.com/KaTeX/KaTeX"
 [[module.imports.mounts]]
 source = "fonts"
 target = "assets/mods/katex/fonts"
