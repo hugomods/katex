@@ -1,8 +1,8 @@
 ---
-title: Hugo KaTex Module
+title: Hugo KaTeX Module
 ---
 
-## Using KaTex via Code Block
+## Using KaTeX via Code Block
 
 ```katex
 \tag*{(1)} P(E) = {n \choose k} p^k (1-p)^{n-k}
@@ -12,7 +12,7 @@ title: Hugo KaTex Module
 f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
 ```
 
-## Using KaTex via Shortcode
+## Using KaTeX via Shortcode
 
 {{< katex >}}
   \begin{array}{l}

@@ -1,4 +1,4 @@
-{{/* Publish the KaTex fonts. */}}
+{{/* Publish the KaTeX fonts. */}}
 {{- range resources.Match "mods/katex/fonts/*" }}
   {{/* Rewrite the target path. */}}
   {{- $targetPath := printf "css/fonts/%s%s" (path.BaseName .Name) (path.Ext .Name) }}
