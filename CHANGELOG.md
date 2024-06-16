@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.2](https://github.com/hugomods/katex/compare/v0.3.1...v0.3.2) (2024-06-16)
+
+
+### Performance Improvements ⚡️
+
+* **hugopress:** cache head-end and body-end hooks ([255695b](https://github.com/hugomods/katex/commit/255695b84242597846b062b05b2fa2d4ae47177b))
+
 ## [0.3.1](https://github.com/hugomods/katex/compare/v0.3.0...v0.3.1) (2024-03-25)
 
 
