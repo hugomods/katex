@@ -19,5 +19,9 @@
   },
   "scripts": {
     "build": "webpack"
+  },
+  "dependencies": {
+    "katex": "^0.16.15",
+    "webpack": "^5.97.1"
   }
 }
