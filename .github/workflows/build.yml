@@ -1,0 +1,30 @@
+name: build
+
+on:
+  push:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm ci
+      - run: npm run build
+      - id: version
+        run: |
+          VERSION=$(npm list katex | grep -P '\d+([\d\.]+)' -o)
+          echo ${VERSION}
+          echo "number=${VERSION}" >> "$GITHUB_OUTPUT"
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          token: ${{ secrets.MAINTAINER_TOKEN }}
+          commit-message: 'ci(deps): bump KaTeX to ${{ steps.version.outputs.number }}'
