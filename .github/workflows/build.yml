@@ -27,4 +27,5 @@ jobs:
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.MAINTAINER_TOKEN }}
+          title: 'ci(deps): bump KaTeX to ${{ steps.version.outputs.number }}'
           commit-message: 'ci(deps): bump KaTeX to ${{ steps.version.outputs.number }}'
