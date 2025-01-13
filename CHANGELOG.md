@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.3.7](https://github.com/hugomods/katex/compare/v0.3.6...v0.3.7) (2025-01-13)
+
+
+### Continuous Integration
+
+* **deps:** bump KaTeX to 0.16.20 ([#44](https://github.com/hugomods/katex/issues/44)) ([cb8bbf0](https://github.com/hugomods/katex/commit/cb8bbf087f81267429bd5e1baa7bba707a19d019))
+
 ## [0.3.6](https://github.com/hugomods/katex/compare/v0.3.5...v0.3.6) (2024-12-30)
 
 
